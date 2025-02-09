@@ -1,10 +1,8 @@
 var uniqueInOrder = function(iterable) {
     var arr = [];
     for (var i=0;i<iterable.length;i++) {
-
     // check if there is back to back letter
     if (iterable[i] !== iterable[i+1]) {
-
         // if not, push the current value to arr
       arr.push(iterable[i]);
     }
@@ -12,7 +10,7 @@ var uniqueInOrder = function(iterable) {
   return arr;
 }
 
-// my older solution that almost worked
+// older code that did not include numbers
 // var uniqueInOrder=function(iterable){
 //   //your code here - remember iterable can be a string or an array
 //   let string = iterable.split("");
@@ -27,12 +25,14 @@ var uniqueInOrder = function(iterable) {
 //       }
 //     }
 //     else {
+//         if (!arr.includes(string[i])){
+//             arr.push(string[i])
+//         }
 //         arr.push(string[i+1]);
 //     }
 //   }
 //   return console.log(arr);
 // }
-
 // uniqueInOrder('AAAABBBCCDAABBB')
 // uniqueInOrder('ABBCcAD')
-
+// uniqueInOrder([1,2,2,3,3])
