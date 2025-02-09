@@ -10,7 +10,7 @@ var uniqueInOrder = function(iterable) {
   return arr;
 }
 
-// older code that did not include numbers
+// older code that did not include numbers or char
 // var uniqueInOrder=function(iterable){
 //   //your code here - remember iterable can be a string or an array
 //   let string = iterable.split("");
